@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.github.act262.customview.R;
+import com.github.act262.customview.view.DrawHookView;
 import com.github.act262.customview.view.GridsView;
 import com.github.act262.customview.view.RulesView;
 
@@ -27,6 +28,9 @@ public class CustomViewActivity extends Activity {
                 break;
             case R.id.btn_rules_view:
                 view = new RulesView(this);
+                break;
+            case R.id.btn_hook_view:
+                view = new DrawHookView(this);
                 break;
         }
         setContentView(view, new FrameLayout.LayoutParams(-1, -1));
